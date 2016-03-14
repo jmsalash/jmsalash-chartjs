@@ -10,7 +10,7 @@ Package.onUse(function(api) {
   api.versionsFrom("1.2.0.1");
 
   // Core packages and 3rd party packages
-  api.use("momentjs:moment@2.12.0");	
+  api.use("momentjs:moment@2.10.6");	
   
   // The files of this package
   api.addFiles("client/Chart.js", ["client"]);
@@ -23,7 +23,7 @@ Package.onUse(function(api) {
 
 
 Package.onTest(function (api) {
-  api.use("momentjs:moment@2.12.0");
+  api.use("momentjs:moment@2.10.6");
   api.use("sanjo:jasmine@0.21.0");	
   api.use("jmsalash:chartjs");
   api.addFiles("tests/jasmine/client/integration/mockContext.js", ["client"]);
